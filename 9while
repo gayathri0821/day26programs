@@ -1,0 +1,48 @@
+pseudocode:-
+
+BEGIN
+numeric variable rnum
+DISPLAY enter number
+INPUT num
+DISPLAY the original number
+While num!=0
+check condition d=no%10 and rnum=rnum*10+d
+DISPLAY reversed number
+END
+
+
+program:-
+//create package 
+package march24;
+//create class
+public class Ex9 
+{
+//create main method
+	public static void main(String  ...args)
+	{
+		//initialize a variable rnum
+		int rnum=0;
+		//using scanner class we have to read inputs
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		//prompt the user for taking input value
+		System.out.println("enter number");
+		//read the input from keyboard and store it on one variable ie, no
+		int no=sc.nextInt();
+		//print  the value 
+		System.out.println("the  original number is:"+no);
+		//using while loop to find the reverse number
+		//check the input number is not equals to 0 or not
+		//it true then enters the loop
+        while(no!=0)
+        {
+        	//after checks the given conditions
+        	int a=no%10;
+        	rnum=rnum*10+a;
+        	no=no/10;
+        	
+        }//end of while loop
+        //print the reversed value 
+        System.out.println("reversed number is:"+rnum);
+	}//end of main method
+
+}//end of class block
